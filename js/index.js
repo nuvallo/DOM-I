@@ -83,3 +83,25 @@ scelerisque quis.`;
 // Second Image
 const imageTwo = document.getElementById("middle-img");
 imageTwo.src = "img/mid-page-accent.jpg";
+
+// Buttom Content
+headingFours[2].textContent = "Services";
+paragraphs[2].textContent = ` Services content elementum magna eros, ac posuere elvit tempus et.
+Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.`;
+
+headingFours[3].textContent = "Product";
+paragraphs[3].textContent = ` Product content elementum magna eros, ac posuere elvit tempus et.
+Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.`;
+
+headingFours[4].textContent = "Vision";
+paragraphs[4].textContent = ` Vision content elementum magna eros, ac posuere elvit tempus et.
+Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.`;
+
+headingFours[5].textContent = "Contact";
+paragraphs[5].textContent = `123 Way 456 Street Somewhere, USA`;
