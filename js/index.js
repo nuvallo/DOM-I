@@ -48,69 +48,56 @@ logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
 // Navigation bar
 const nav = document.querySelectorAll("a");
-nav[0].textContent = "Services";
-nav[1].textContent = "Product";
-nav[2].textContent = "Vision";
-nav[3].textContent = "Features";
-nav[4].textContent = "About";
-nav[5].textContent = "Contact";
+nav[0].textContent = siteContent.nav["nav-item-1"];
+nav[1].textContent = siteContent.nav["nav-item-2"];
+nav[2].textContent = siteContent.nav["nav-item-3"];
+nav[3].textContent = siteContent.nav["nav-item-4"];
+nav[4].textContent = siteContent.nav["nav-item-5"];
+nav[5].textContent = siteContent.nav["nav-item-6"];
 
-// headingOnes
+// Selectors
 const headingOnes = document.querySelector("h1");
-headingOnes.textContent = "Dom is awesome";
-
-// Buttons
 const button = document.querySelector("button");
-button.textContent = "Get Started";
-
-// ImageOne
 const imageOne = document.getElementById("cta-img");
-imageOne.src = "img/header-img.png";
-
-// Second Image
-const imageTwo = document.getElementById("middle-img");
-imageTwo.src = "img/mid-page-accent.jpg";
-
-// HeadingFours
 const headingFours = document.querySelectorAll("h4");
-headingFours[0].textContent = "Features";
-headingFours[1].textContent = "About";
-headingFours[2].textContent = "Services";
-headingFours[3].textContent = "Product";
-headingFours[4].textContent = "Vision";
-headingFours[5].textContent = "Contact";
-
-// Paragraphs
 const paragraphs = document.querySelectorAll("p");
-paragraphs[0].textContent = `Features content elementum magna eros, ac posuere elvit tempus et. 
-Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
-ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.`;
+const imageTwo = document.getElementById("middle-img");
 
-paragraphs[1].textContent = ` About content elementum magna eros, ac posuere elvit tempus et.
-Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
-ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.`;
+// Cta Section
+headingOnes.textContent = siteContent.cta["h1"];
+button.textContent = siteContent.cta["button"];
+imageOne.src = siteContent.cta["img-src"];
 
-paragraphs[2].textContent = ` Services content elementum magna eros, ac posuere elvit tempus et.
-Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
-ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.`;
+// Main Section
 
-paragraphs[3].textContent = ` Product content elementum magna eros, ac posuere elvit tempus et.
-Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
-ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.`;
+// Feature
+headingFours[0].textContent = siteContent["main-content"]["features-h4"];
+paragraphs[0].textContent = siteContent["main-content"]["features-content"];
 
-paragraphs[4].textContent = ` Vision content elementum magna eros, ac posuere elvit tempus et.
-Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
-ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.`;
+// About
+headingFours[1].textContent = siteContent["main-content"]["about-h4"];
+paragraphs[1].textContent = siteContent["main-content"]["about-content"];
 
-paragraphs[5].textContent = `123 Way 456 Street Somewhere, USA`;
+// Services
+headingFours[2].textContent = siteContent["main-content"]["services-h4"];
+paragraphs[2].textContent = siteContent["main-content"]["services-content"];
 
-paragraphs[6].textContent = `1 (888) 888-8888`;
+// Product
+headingFours[3].textContent = siteContent["main-content"]["product-h4"];
+paragraphs[3].textContent = siteContent["main-content"]["product-content"];
 
-paragraphs[7].textContent = `sales@greatidea.io`;
+// Vision
+headingFours[4].textContent = siteContent["main-content"]["vision-h4"];
+paragraphs[4].textContent = siteContent["main-content"]["vision-content"];
 
-paragraphs[8].textContent = "Copyright Great Idea! 2018";
+// main section Image
+imageTwo.src = siteContent["main-content"]["middle-img-src"];
+
+// Contact section
+headingFours[5].textContent = siteContent.contact["contact-h4"];
+paragraphs[5].textContent = siteContent.contact.address;
+paragraphs[6].textContent = siteContent.contact.phone;
+paragraphs[7].textContent = siteContent.contact.email;
+
+// Copyright
+paragraphs[8].textContent = siteContent.footer.copyright;
