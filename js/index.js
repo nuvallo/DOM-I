@@ -55,56 +55,62 @@ nav[3].textContent = "Features";
 nav[4].textContent = "About";
 nav[5].textContent = "Contact";
 
-// CTA Section
-const headingOne = document.querySelector("h1");
-headingOne.textContent = "Dom is awesome";
+// headingOnes
+const headingOnes = document.querySelector("h1");
+headingOnes.textContent = "Dom is awesome";
 
+// Buttons
 const button = document.querySelector("button");
 button.textContent = "Get Started";
 
-const image = document.getElementById("cta-img");
-image.src = "img/header-img.png";
-
-// Main Content Section
-const headingFours = document.querySelectorAll("h4");
-headingFours[0].textContent = "Features";
-headingFours[1].textContent = "About";
-
-const paragraphs = document.querySelectorAll("p");
-paragraphs[0].textContent = `Features content elementum magna eros, ac posuere elvit tempus et. 
-Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
-ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.`;
-paragraphs[1].textContent = ` About content elementum magna eros, ac posuere elvit tempus et.
-Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
-ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.`;
+// ImageOne
+const imageOne = document.getElementById("cta-img");
+imageOne.src = "img/header-img.png";
 
 // Second Image
 const imageTwo = document.getElementById("middle-img");
 imageTwo.src = "img/mid-page-accent.jpg";
 
-// Buttom Content
+// HeadingFours
+const headingFours = document.querySelectorAll("h4");
+headingFours[0].textContent = "Features";
+headingFours[1].textContent = "About";
 headingFours[2].textContent = "Services";
+headingFours[3].textContent = "Product";
+headingFours[4].textContent = "Vision";
+headingFours[5].textContent = "Contact";
+
+// Paragraphs
+const paragraphs = document.querySelectorAll("p");
+paragraphs[0].textContent = `Features content elementum magna eros, ac posuere elvit tempus et. 
+Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.`;
+
+paragraphs[1].textContent = ` About content elementum magna eros, ac posuere elvit tempus et.
+Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.`;
+
 paragraphs[2].textContent = ` Services content elementum magna eros, ac posuere elvit tempus et.
 Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
 ornare nisl. Nullam convallis augue justo, at imperdiet metus
 scelerisque quis.`;
 
-headingFours[3].textContent = "Product";
 paragraphs[3].textContent = ` Product content elementum magna eros, ac posuere elvit tempus et.
 Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
 ornare nisl. Nullam convallis augue justo, at imperdiet metus
 scelerisque quis.`;
 
-headingFours[4].textContent = "Vision";
 paragraphs[4].textContent = ` Vision content elementum magna eros, ac posuere elvit tempus et.
 Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
 ornare nisl. Nullam convallis augue justo, at imperdiet metus
 scelerisque quis.`;
 
-headingFours[5].textContent = "Contact";
 paragraphs[5].textContent = `123 Way 456 Street Somewhere, USA`;
+
 paragraphs[6].textContent = `1 (888) 888-8888`;
+
 paragraphs[7].textContent = `sales@greatidea.io`;
+
 paragraphs[8].textContent = "Copyright Great Idea! 2018";
