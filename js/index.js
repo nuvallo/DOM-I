@@ -132,3 +132,20 @@ paragraphs[7].textContent = siteContent.contact.email;
 
 // Copyright
 paragraphs[8].textContent = siteContent.footer.copyright;
+
+// Stretch Goal (Event Listener)
+function stretchButtonFunction() {
+  var button = document.createElement("button");
+  var styleAtt = document.createAttribute("style");
+  styleAtt.value = "padding: 50px; margin: 5%;";
+  button.setAttributeNode(styleAtt);
+  button.textContent = "press Me!";
+  function alertFunction() {
+    var userName = prompt("Enter your name here");
+    alert(`Hello ${userName.toUpperCase()}`);
+  }
+  button.addEventListener("click", alertFunction);
+  return button;
+}
+
+const stretchButton = document.body.append(stretchButtonFunction());
