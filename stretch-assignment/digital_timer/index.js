@@ -6,3 +6,4 @@ const msTens = document.getElementById("msTens");
 
 var date = new Date();
 var time = date.getTime();
+secondTens.time;
