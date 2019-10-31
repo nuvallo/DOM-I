@@ -46,20 +46,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
-// Prepend and Append Functions
-function prependLink(text) {
-  var newLink = document.createElement("a");
-  var newAtt = document.createAttribute("href");
-  var newStyle = document.createAttribute("style");
-  newLink.setAttributeNode(newAtt);
-  newAtt.value = "#";
-  newLink.setAttributeNode(newStyle);
-  newStyle.value = "color: green";
-  newLink.textContent = text;
-  return newLink;
-}
-
-function appendLink(text) {
+// Prepend and Append Function
+function addToNav(text) {
   var newLink = document.createElement("a");
   var newAtt = document.createAttribute("href");
   var newStyle = document.createAttribute("style");
@@ -82,8 +70,8 @@ const paragraphs = document.querySelectorAll("p");
 const imageTwo = document.getElementById("middle-img");
 
 // Navigation bar
-navbar.prepend(prependLink("Home"));
-navbar.append(appendLink("Blogs"));
+navbar.prepend(addToNav("Home"));
+navbar.append(addToNav("Blogs"));
 navLinks[0].textContent = siteContent.nav["nav-item-1"];
 navLinks[1].textContent = siteContent.nav["nav-item-2"];
 navLinks[2].textContent = siteContent.nav["nav-item-3"];
