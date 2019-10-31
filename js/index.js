@@ -46,22 +46,53 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
-// Navigation bar
-const nav = document.querySelectorAll("a");
-nav[0].textContent = siteContent.nav["nav-item-1"];
-nav[1].textContent = siteContent.nav["nav-item-2"];
-nav[2].textContent = siteContent.nav["nav-item-3"];
-nav[3].textContent = siteContent.nav["nav-item-4"];
-nav[4].textContent = siteContent.nav["nav-item-5"];
-nav[5].textContent = siteContent.nav["nav-item-6"];
+// Prepend and Append Functions
+function prependLink(text) {
+  var newLink = document.createElement("a");
+  var newAtt = document.createAttribute("href");
+  var newStyle = document.createAttribute("style");
+  newLink.setAttributeNode(newAtt);
+  newAtt.value = "#";
+  newLink.setAttributeNode(newStyle);
+  newStyle.value = "color: green";
+  newLink.textContent = text;
+  return newLink;
+}
+
+function appendLink(text) {
+  var newLink = document.createElement("a");
+  var newAtt = document.createAttribute("href");
+  var newStyle = document.createAttribute("style");
+  newLink.setAttributeNode(newAtt);
+  newAtt.value = "#";
+  newLink.setAttributeNode(newStyle);
+  newStyle.value = "color: green";
+  newLink.textContent = text;
+  return newLink;
+}
 
 // Selectors
+const navbar = document.querySelector("nav");
+const navLinks = document.querySelectorAll("a");
 const headingOnes = document.querySelector("h1");
 const button = document.querySelector("button");
 const imageOne = document.getElementById("cta-img");
 const headingFours = document.querySelectorAll("h4");
 const paragraphs = document.querySelectorAll("p");
 const imageTwo = document.getElementById("middle-img");
+
+// Navigation bar
+navbar.prepend(prependLink("Home"));
+navbar.append(appendLink("Blogs"));
+navLinks[0].textContent = siteContent.nav["nav-item-1"];
+navLinks[1].textContent = siteContent.nav["nav-item-2"];
+navLinks[2].textContent = siteContent.nav["nav-item-3"];
+navLinks[3].textContent = siteContent.nav["nav-item-4"];
+navLinks[4].textContent = siteContent.nav["nav-item-5"];
+navLinks[5].textContent = siteContent.nav["nav-item-6"];
+navLinks.forEach(links => {
+  links.style.color = "green";
+});
 
 // Cta Section
 headingOnes.textContent = siteContent.cta["h1"];
